@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageArcher"
+        android:layout_width="148dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:srcCompat="@drawable/archer1" />
+
+    <EditText
+        android:id="@+id/lvl"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:text="1"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageAssassin"
+        android:layout_width="148dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:srcCompat="@drawable/assassin1" />
+
+    <ImageView
+        android:id="@+id/imageMage"
+        android:layout_width="148dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        tools:srcCompat="@drawable/mage1" />
+
+    <ImageView
+        android:id="@+id/imageWarriors"
+        android:layout_width="161dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/warriors1" />
+
+    <ImageView
+        android:id="@+id/imageLogoVisible"
+        android:layout_width="161dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        tools:srcCompat="@drawable/logovisible" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rakkas"
+        android:text="Level:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@+id/heroHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Health"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/Classtxt"
+        app:layout_constraintStart_toStartOf="@+id/Classtxt"
+        app:layout_constraintTop_toBottomOf="@+id/Classtxt" />
+
+    <TextView
+        android:id="@+id/heroINT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rakkas"
+        android:text="INT"
+        app:layout_constraintEnd_toEndOf="@+id/heroAGI"
+        app:layout_constraintStart_toStartOf="@+id/heroAGI"
+        app:layout_constraintTop_toBottomOf="@+id/heroAGI" />
+
+    <TextView
+        android:id="@+id/heroAGI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AGI"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroSTR"
+        app:layout_constraintStart_toStartOf="@+id/heroSTR"
+        app:layout_constraintTop_toBottomOf="@+id/heroSTR" />
+
+    <TextView
+        android:id="@+id/heroSTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="STR"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroARMOR"
+        app:layout_constraintStart_toStartOf="@+id/heroARMOR"
+        app:layout_constraintTop_toBottomOf="@+id/heroARMOR" />
+
+    <TextView
+        android:id="@+id/heroMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mana"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroHP"
+        app:layout_constraintStart_toStartOf="@+id/heroHP"
+        app:layout_constraintTop_toBottomOf="@+id/heroHP" />
+
+    <TextView
+        android:id="@+id/heroARMOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Armor"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroMP"
+        app:layout_constraintStart_toStartOf="@+id/heroMP"
+        app:layout_constraintTop_toBottomOf="@+id/heroMP" />
+
+    <TextView
+        android:id="@+id/heroHPresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/heroHP"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/heroMPresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroHPresult"
+        app:layout_constraintStart_toStartOf="@+id/heroHPresult"
+        app:layout_constraintTop_toTopOf="@+id/heroMP" />
+
+    <TextView
+        android:id="@+id/heroARMORresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroMPresult"
+        app:layout_constraintStart_toStartOf="@+id/heroMPresult"
+        app:layout_constraintTop_toTopOf="@+id/heroARMOR" />
+
+    <TextView
+        android:id="@+id/heroSTRresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroARMORresult"
+        app:layout_constraintStart_toStartOf="@+id/heroARMORresult"
+        app:layout_constraintTop_toTopOf="@+id/heroSTR" />
+
+    <TextView
+        android:id="@+id/heroAGIresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroSTRresult"
+        app:layout_constraintStart_toStartOf="@+id/heroSTRresult"
+        app:layout_constraintTop_toTopOf="@+id/heroAGI" />
+
+    <TextView
+        android:id="@+id/heroINTresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-!-"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/heroAGIresult"
+        app:layout_constraintStart_toStartOf="@+id/heroAGIresult"
+        app:layout_constraintTop_toTopOf="@+id/heroINT" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/heroClassesBtn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/rakkas"
+        android:background="@drawable/finalbutton"
+        android:text="SubClasses"
+        android:textColor="#a8a254"
+        android:textSize="14.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <TextView
+        android:id="@+id/Classtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Class:"
+        android:fontFamily="@font/rakkas"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/heroClass"
+        android:layout_width="116dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/rakkas"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/lvl"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/lvl"
+        app:layout_constraintTop_toTopOf="@+id/Classtxt" >
+</Spinner>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
